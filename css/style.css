@@ -4,17 +4,27 @@
 
 	
 	.header__container,
-	.promo__row {
+	.promo__row,
+	.direction__container {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
 
 	.header__logo {
-	background-image: url('../img/css_sprites.png'); 
-	background-repeat: no-repeat;
+		background-image: url('../img/css_sprites.png'); 
+		background-repeat: no-repeat;
+	}
+
+	.direction__vocal--text-desc,
+	.direction__guitar--text-desc,
+	.direction__guitar--text-price,
+	.promo__text--desc,
+	.promo__form-desc,
+	.direction__piano--text-desc,
+	.direction__lessons-desc {
+		display: none;
 	}
 	
-
 
 	/*HEADER*/
 
@@ -130,10 +140,6 @@
 		background-size: cover;
 	}
 
-	.promo__text--desc {
-		display: none;
-	}
-
 	.promo__btn--mobile {
 		background-color: #eec643;
 		height: 60px;
@@ -141,9 +147,44 @@
 		margin-top: 80px;
 	}
 
-	.promo__form-desc {
-		display: none;
+
+	/*DIRECTION*/
+
+
+	.direction__vocal {
+		background-image: url(../img/directions_card_img_2.jpg);
+		background-repeat: no-repeat;
+		width: 100%;
+		color: #fff;
 	}
+
+	.direction__guitar {
+		background-image: url(../img/directions_card_img_1.jpg);
+		background-repeat: no-repeat;
+		width: 100%;
+		color: #fff;
+	}
+
+	.direction__piano {
+		background-image: url(../img/directions_card_img_3.jpg);
+		background-repeat: no-repeat;
+		width: 70%;
+		color: #fff;
+		float: left;
+		display: inline-block;
+	}
+
+	.direction__item {
+		float: right;
+		transform: rotate(-90deg);
+		display: inline-block;
+		width: 30%;
+		background-color: #eec643;
+	}
+
+
+
+
 
 }
 
