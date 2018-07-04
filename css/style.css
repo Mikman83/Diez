@@ -1,11 +1,26 @@
-
-
-@media (min-width: 280px) {
+html {
+	box-sizing: border-box;
+}
+* {
+	box-sizing: inherit;
+}
+body {
+	font-size: 16px;
+	font-family: "PTSans", sans-serif;
+	color: #f9fcfc;
+}
+a {
+	font-size: 16px;
+	font-family: "PTSans", sans-serif;
+	color: #f9fcfc; 	
+	text-decoration: none;
+}
 
 	
 	.header__container,
 	.promo__row,
-	.direction__container {
+	.direction__container,
+	.about__container {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -14,17 +29,6 @@
 		background-image: url('../img/css_sprites.png'); 
 		background-repeat: no-repeat;
 	}
-
-	.direction__vocal--text-desc,
-	.direction__guitar--text-desc,
-	.direction__guitar--text-price,
-	.promo__text--desc,
-	.promo__form-desc,
-	.direction__piano--text-desc,
-	.direction__lessons-desc {
-		display: none;
-	}
-	
 
 	/*HEADER*/
 
@@ -85,6 +89,7 @@
 		color: #fff;
 	}
 
+	/*burger*/
 	.burger {
 		position: relative;
 		display: block;
@@ -154,15 +159,49 @@
 	.direction__vocal {
 		background-image: url(../img/directions_card_img_2.jpg);
 		background-repeat: no-repeat;
-		width: 100%;
-		color: #fff;
+		background-size: cover;
+	  font-size: 18px;
+	  font-family: "PTSans", sans-serif;
+	  color: #f9fcfc;
+	  min-height: 145px;
+	}
+	.direction__vocal-title {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.direction__vocal-text {
+  	font-size: 16px;
+	}
+	.direction__vocal-text--desc {
+		display: none;
+	}
+	
+
+	.direction__guitar--text-desc,
+	.direction__guitar--text-price,
+	.promo__text--desc,
+	.promo__form-desc,
+	.direction__piano--text-desc,
+	.direction__lessons-desc,
+	.about__composition--text-desc,
+	.about__result--text-desc,
+	.about__studio--text-desc,
+	.about__item--form-desc {
+		display: none;
 	}
 
 	.direction__guitar {
 		background-image: url(../img/directions_card_img_1.jpg);
 		background-repeat: no-repeat;
+		background-size: cover;
 		width: 100%;
 		color: #fff;
+	}
+
+	.direction__cols {
+		display: flex;
+		padding-right: 15px;
+		justify-content: space-between;
 	}
 
 	.direction__piano {
@@ -170,23 +209,80 @@
 		background-repeat: no-repeat;
 		width: 70%;
 		color: #fff;
-		float: left;
-		display: inline-block;
+		margin-left: 8px;
 	}
 
 	.direction__item {
-		float: right;
 		transform: rotate(-90deg);
-		display: inline-block;
-		width: 30%;
+		width: 25%;
 		background-color: #eec643;
+		margin-right: 8px;
 	}
+
+
+	/*ABOUT*/
+
+	.about__composition {
+		background-image: url(../img/advantages_card_img_1.jpg);
+
+	}
+
+	.about__result {
+		background-image: url(../img/advantages_card_img_2.jpg);
+	}
+
+	.about__studio {
+		background-image: url(../img/advantages_card_img_3.jpg);
+	}
+
+
+	/*VIDEO*/
+
+	.video__chery {
+		background-image: url(../img/video_card_img_1.jpg);
+	}
+
+	.video__jo {
+		background-image: url(../img/video_card_img_2.jpg);
+	}
+
+	.video__calm {
+		background-image: url(../img/video_card_img_3.jpg);
+	}
+
+	.video__serg {
+		background-image: url(../img/video_card_img_4.jpg);
+	}
+
+
+@media (min-width: 1012px) {
+
+	body {
+		font-size: 20px;
+	}
+
+	.direction__vocal-text--mobile {
+		display: none;
+	}
+	
+	.direction__vocal-text--desc {
+		display: block;
+	}
+
+
+
+
+
 
 
 
 
 
 }
+
+
+
+
 
 
 
