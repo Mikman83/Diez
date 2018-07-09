@@ -119,13 +119,13 @@
 	.burger_active .burger__inner:before {
 		transform: rotate(35deg);
 		transform-origin: left bottom;
-		height: 12px;
+		height: 24px;
 	}
 
 	.burger_active .burger__inner::after {
 		transform: rotate(-35deg);
 		transform-origin: right bottom;
-		height: 12px;
+		height: 24px;
 	}
 
 	.burger_active .burger__inner {
@@ -719,27 +719,31 @@
 
 	/*CONTACTS*/
 
-
-
-
-		
-
-/*
-
-	.promo__form--item {
-		width: 210px;
-		background-color: #f7f2e1;
+	.contacts__row {
+		display: flex;
 	}
 
-	.promo__form-btn {
-		position: absolute;
-		background-color: #021a23;
-		color: #e9edee;
+	.col-9 {
+		width: 75%;
+		display: flex;
+		flex-direction: column;
 	}
-*/
 
+	.row-frst {
+		display: flex;
+	}
 
+	.contacts__title {
+		color: #021a23;
+	}
 
+	.contacts__text {
+		color: #021a23;
+	}
+
+	.col-3 {
+		width: 25%;
+	}
 
 
 
@@ -748,13 +752,6 @@
 
 
 }
-
-
-
-
-
-
-
 
 
 	
