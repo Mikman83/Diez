@@ -118,13 +118,11 @@
 
 	.burger_active .burger__inner:before {
 		transform: rotate(35deg);
-		transform-origin: left bottom;
 		height: 24px;
 	}
 
 	.burger_active .burger__inner::after {
 		transform: rotate(-35deg);
-		transform-origin: right bottom;
 		height: 24px;
 	}
 
