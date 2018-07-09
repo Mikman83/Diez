@@ -4,16 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Diez - школа музыкального искуства</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Prata" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="wrap">
-
 	<!-- HEADER -->
 
 		<header class="header">
-			<div class="header__container ">
+			<div class="container">
 				<div class="header__row">
 					<div class="header__logo"></div>
 					<div class="header__dropdown">
@@ -44,11 +43,12 @@
 	<!-- PROMO -->
 
 		<section class="promo">
-			<div class="promo__container ">
+			<div class="container">
 				<div class="promo__row">
 					<div class="promo__info">
 						<h1 class="promo__title">Школа музыкального искуства</h1>
-						<p class="promo__text--mobil">Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</p>
+						<h1 class="promo__title-desc">Diez — школа музыкального искусства</h1>
+						<p class="promo__text--mobile">Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</p>
 						<p class="promo__text--desc">Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки</p>
 						<button class="promo__btn--mobile">вводный урок</button>
 					</div>
@@ -56,14 +56,14 @@
 						<form action="#" class="promo__form">
 							<h3 class="promo__form--header">Вводный урок</h3>
 							<p class="promo__form--text">Попробуй любые направления бесплатно</p>
-							<input type="text" class="promo__form--item" value="Имя">
-							<input type="text" value="Телефон" class="promo__form--item">
+							<input type="text" class="promo__form--item" placeholder="Имя">
+							<input type="text" placeholder="Телефон" class="promo__form--item">
 							<select class="promo__form--item" name="Направление" id="">
 								<option value="Гитара">Гитара</option>
 								<option value="Вокал">Вокал</option>
 								<option value="Фортепиано">Фортепиано</option>
 							</select>
-							<input type="submit" value="Записаться">
+							<input class="promo__form-btn" type="submit" value="Записаться">
 						</form>
 					</div>
 				</div>
@@ -76,31 +76,35 @@
 			<div class="direction__container container">
 				<h2 class="direction__header">Растим музыкантов</h2>
 				<div class="direction__row row">
-					<div class="direction__vocal">
-						<h3 class="direction__vocal-title">Вокал</h3>
-						<p class="direction__vocal-text  direction__vocal-text--mobile">Пой, как Селин Дион и Эми Вайнхаус</p>
-						<p class="direction__vocal-text direction__vocal-text--desc">Пой, как Шаде Аду и Эми Вайнхаус</p>
+					<div class="direction__cols">
+						<div class="direction__vocal">
+							<h3 class="direction__vocal-title">Вокал</h3>
+							<p class="direction__vocal-text  direction__vocal-text--mobile">Пой, как Селин Дион и Эми Вайнхаус</p>
+							<p class="direction__vocal-text direction__vocal-text--desc">Пой, как Шаде Аду и Эми Вайнхаус</p>
+						</div>
+						<div class="direction__guitar">
+							<h3 class="direction__guitar--header">Гитара</h3>
+							<p class="direction__guitar--text-mobile">Начни играть, как Джими Хендрикс</p>
+							<p class="direction__guitar--text-desc">Хочешь играть, как Джими Хендрикс, Би Би Кинг или Андрес Сеговия - мы научим</p>
+							<p class="direction__guitar--text-price">1 урок от 800₽</p>
+						</div>
 					</div>
-					<div class="direction__guitar">
-						<h3 class="direction__guitar--header">Гитара</h3>
-						<p class="direction__guitar--text-mobile">Начни играть, как Джими Хендрикс</p>
-						<p class="direction__guitar--text-desc">Хочешь играть, как Джими Хендрикс, Би Би Кинг или Андрес Сеговия - мы научим</p>
-						<p class="direction__guitar--text-price">1 урок от 800₽</p>
-					</div>
-					<!-- <div class="direction__cols"> -->
+					<div class="direction__cols">
 						<div class="direction__piano">
 							<h3 class="direction__piano--header">Фортепиано</h3>
 							<p class="direction__piano--text-mobile">Чувствуй клавиши, как Людовико Эйнауди</p>
 							<p class="direction__piano--text-desc">Академический, рок, эстрадный, джазовый</p>
 						</div>
-						<div class="direction__lessons-desc">
-							<h3 class="direction__lessons--header">Лекции</h3>
-							<p class="direction__lessons--text">Подтяни свои знания в теории музыки</p>
+						<div class="direction__cols-inner">
+							<div class="direction__lessons-desc">
+								<h3 class="direction__lessons--header">Лекции</h3>
+								<p class="direction__lessons--text">Подтяни свои знания в теории музыки</p>
+							</div>
+							<div class="direction__item">
+								<a href="#" class="direction__link"><h3>Все направления</h3></a>
+							</div>
 						</div>
-						<div class="direction__item">
-							<a href="#" class="direction__link">Все направления</a>
-						</div>
-					<!-- </div> -->
+					</div>
 				</div>
 			</div>
 		</section>
@@ -108,40 +112,46 @@
 	<!-- ABOUT -->
 
 		<section class="about">
-			<div class="about__container ">
+			<div class="about__container container">
 				<div class="about__row">
-					<h2 class="about__header">Задаем темп</h2>
-					<div class="about__composition">
-						<h3 class="about__composition--header">Состав</h3>
-						<p class="about__composition--text-mobile">Учись только у профессионалов</p>
-						<p class="about__composition--text-desc">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
+					<div class="about__col-5 cols">
+						<h2 class="about__header">Задаем темп</h2>
+						<div class="about__cols-inner">
+							<div class="about__composition">
+								<h3 class="about__composition--header">Состав</h3>
+								<p class="about__composition--text-mobile">Учись только у профессионалов</p>
+								<p class="about__composition--text-desc">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
+							</div>
+							<div class="about__result">
+								<h3 class="about__result--header">Результат</h3>
+								<p class="about__result--text-mobile">Выступай на отчетных концертах</p>
+								<p class="about__result--text-desc">Выступи на отчетном концерте через три месяца обучения</p>
+							</div>
+						</div>
 					</div>
-					<div class="about__result">
-						<h3 class="about__result--header">Результат</h3>
-						<p class="about__result--text-mobile">Выступай на отчетных концертах</p>
-						<p class="about__result--text-desc">Выступи на отчетном концерте через три месяца обучения</p>
-					</div>
-					<div class="about__studio">
-						<h3 class="about__studio--header">Студия</h3>
-						<p class="about__studio--text-mobile">Записывай песни каждый месяц</p>
-						<p class="about__studio--text-desc">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
-					</div>
-					<div class="about__item--form-mobile">
-						<button class="about__item--form-link">Вводный урок</button>
-					</div>
-					<div class="about__item--form-desc">
-						<form action="#" class="about__form">
-							<h3 class="about__form--header">Вводный урок</h3>
-							<p class="about__form--text">Попробуй любые направления бесплатно</p>
-							<input type="text" class="about__form--item" value="Имя">
-							<input type="text" value="Телефон" class="about__form--item">
-							<select class="about__form--item" name="Направление" id="">
-								<option value="Гитара">Гитара</option>
-								<option value="Вокал">Вокал</option>
-								<option value="Фортепиано">Фортепиано</option>
-							</select>
-							<input type="submit" value="Записаться">
-						</form>
+					<div class="about__col-7">
+						<div class="about__studio">
+							<h3 class="about__studio--header">Студия</h3>
+							<p class="about__studio--text-mobile">Записывай песни каждый месяц</p>
+							<p class="about__studio--text-desc">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
+						</div>
+						<div class="about__item--form-mobile">
+							<button class="about__item--form-link">Вводный урок</button>
+						</div>
+						<div class="about__item--form-desc">
+							<form action="#" class="about__form">
+								<h3 class="about__form--header">Вводный урок</h3>
+								<p class="about__form--text">Попробуй любые направления бесплатно</p>
+								<input type="text" class="about__form-item" placeholder="Имя">
+								<input type="text" placeholder="Телефон" class="about__form-item">
+								<select class="about__form-item" name="Направление" id="">
+									<option value="Гитара">Гитара</option>
+									<option value="Вокал">Вокал</option>
+									<option value="Фортепиано">Фортепиано</option>
+								</select>
+								<input class="about__form-btn" type="submit" value="Записаться">
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -150,7 +160,7 @@
 	<!-- VIDEO -->
 
 		<section class="video">
-			<div class="video__container ">
+			<div class="video__container container">
 				<div class="video__row">
 					<div class="col-1">
 						<h2 class="video__header">В стенах школы</h2>
@@ -164,19 +174,19 @@
 						</div>
 					</div>
 					<div class="col-3">
-						<div class="video__jo">
+						<div class="video__jo video__item">
 							<a class="video__jo--link" href="#">
 								<h3>Янг Чжо</h3>
 								<p>Репетиция сольной партии скрипки</p>
 							</a>
 						</div>
-						<div class="video__calm">
+						<div class="video__calm video__item">
 							<a class="video__calm--link" href="#">
 								<h3>Летний штиль</h3>
 								<p>За кулисами концерта</p>
 							</a>
 						</div>
-						<div class="video__serg">
+						<div class="video__serg video__item">
 							<a class="video__serg--link" href="#">
 								<h3>Сергей Трофимов</h3>
 								<p>ЛЮБЭ - выйду в поле с конем</p>
@@ -190,7 +200,7 @@
 	<!-- CONTACTS -->
 
 		<section class="contacts">
-			<div class="contacts__container ">
+			<div class="contacts__container container">
 				<div class="contacts__row">
 					<div class="col-9">
 						<div class="row-frst">
@@ -228,17 +238,17 @@
 
 	<!-- FOOTER -->
 
-		<footer class="footer ">
-			<div class="footer__logo"></div>
-			<div class="footer__socials">
-				<a class="footer__socials-ytb" href="#"></a>
-				<a class="footer__socials-inst" href="#"></a>
-				<a class="footer__socials-fb" href="#"></a>
-				<a class="footer__socials-vk" href="#"></a>
+		<footer class="footer">
+			<div class="cotainer">
+				<div class="footer__logo"></div>
+				<div class="footer__socials">
+					<a class="footer__socials-ytb" href="#"></a>
+					<a class="footer__socials-inst" href="#"></a>
+					<a class="footer__socials-fb" href="#"></a>
+					<a class="footer__socials-vk" href="#"></a>
+				</div>
 			</div>
 		</footer>
-
-	</div>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/slick.min.js"></script>

@@ -347,3 +347,9 @@ template {
 *:after {
   box-sizing: inherit;
 }
+
+
+ul {
+  padding: 0;
+  margin: 0;
+}
