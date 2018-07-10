@@ -6,10 +6,7 @@
 
 	a {
 		font-size: 16px;
-		font-family: "PTSans", sans-serif;
-		color: #f9fcfc; 	
-		text-decoration: none;
-	}
+		font-family: "PTSans", sans-serif;	}
 
 	.row {
 		display: flex;
@@ -21,7 +18,8 @@
 		padding: 0 3%;
 	}
 
-	.header__logo {
+	.header__logo,
+	.footer__logo {
 		background-image: url('../img/css_sprites.png'); 
 		background-repeat: no-repeat;
 	}
@@ -82,8 +80,9 @@
 
 	.header__menu--link {
 		transition: 0.5s;
+		color: #f9fcfc; 	
 		text-decoration: none;
-		color: #fff;
+
 	}
 
 	/*burger*/
@@ -728,9 +727,10 @@
 
 	.contacts__row {
 		display: flex;
+		margin-top: 90px;
 	}
 
-	.col-9 {
+	.contacts__col-9 {
 		width: 72.7%;
 		display: flex;
 		flex-direction: column;
@@ -743,10 +743,33 @@
 
 	.row-frst__col-8 {
 		width: 66.67%;
+		margin-right: 30px;
 	}
 
 	.contacts__title {
+		position: relative;
+		display: block;
+		padding: 7px 0;
 		color: #021a23;
+		width: 100%;
+	}
+
+	.contacts__title:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background: #eec643;
+		width: 100%;
+		height: 2px;
+	}
+
+	.contacts__title::after {
+		content: '';
+		display: block;
+		position: absolute;
+		background: #eec643;
+		width: 100%;
+		height: 2px;
 	}
 
 	.row-frst__col-4 {
@@ -755,9 +778,11 @@
 
 	.contacts__text {
 		color: #021a23;
+		margin-top: 60px;
+		line-height: 30px;
 	}
 
-	.col-3 {
+	.contacts__col-3 {
 		width: 27.3%;
 	}
 
@@ -797,18 +822,31 @@
 		color: #f7f1d7;
 	}
 
-/*	
-		.about__form-btn {
-		position: absolute;
-		width: 100%;
-		height: 70px;
-		border: none;
-		bottom: 0;
-		left: 0;
-		text-align: center;
-		background-color: #eec643;
-		color: #f7f1d7;
-	}*/
+	/*FOOTER*/
+
+	.footer {
+		margin-top: 90px;
+		padding-bottom: 60px;
+	}
+
+	.footer__logo {
+		content: '';
+    width: 44px;
+    height: 18px;
+		background-position: -10px -9px;
+		float: left;
+	}
+
+	.footer__socials-ytb,
+	.footer__socials-inst,
+	.footer__socials-fb,
+	.footer__socials-vk {
+		text-transform: uppercase;
+		color: #021a23;
+		text-decoration: none;
+		float: right;
+		margin-left: 40px;
+	}
 
 
 
