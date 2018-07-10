@@ -17,8 +17,8 @@
 	}
 	
 	.container {
-		max-width: 290px;
 		margin: 0 auto;
+		padding: 0 3%;
 	}
 
 	.header__logo {
@@ -311,6 +311,8 @@
 	}
 
 	.header__menu--link {
+		font-family: "PTSans", sans-serif;
+		font-size: 16px;
 		color: #3f4c41;
 		margin-left: 25px;
 		text-transform: uppercase;
@@ -322,15 +324,21 @@
 
 	/*PROMO*/
 
-	.promo {
-		margin-bottom: 90px;
-	}
-
+	
 	.promo {
 		color: #f9fcfc;
 		background-image: url(../img/bg_main.jpg);
 		background-size: cover;
 		min-height: 770px;
+		margin-bottom: 90px;
+	}
+
+	.promo__row {
+		margin-top: 65px;
+	}
+
+	.promo__info {
+		float: left;
 	}
 
 	.promo__title {
@@ -341,7 +349,7 @@
 		display: block;
 		font-family: 'Prata', serif;
 		max-width: 700px;
-		font-size: 55px;
+		font-size: 50px;
     font-weight: normal;
 	}
 
@@ -360,30 +368,28 @@
 
 	.promo__form-desc {
 		display: block;
-		position: relative;
+		box-sizing: border-box;
+		float: right;
 	}
 
 	.promo__form {
-		position: absolute;
 		border: 2px solid #021a23;
 		background-color: #f7f2e1;
 		color: #021a23;
-	  left: 900px;
-	  top: -180px;
 	  width: 266px;
 	  height: 416px;
 	  opacity: 0.8;
-	  padding-left: 30px;
-	  padding-right: 30px;
 	}
 
-	.romo__form--header {
+	.promo__form--header {
 		font-size: 30px;
+		margin-left: 30px;
 	}
 
 	.promo__form--text {
 		font-size: 18px;
 		margin-bottom: 50px;
+		margin-left: 30px;
 	}
 
 	.promo__form--item {
@@ -392,18 +398,17 @@
 		border-bottom: 2px solid #021a23;
 		background-color: #f7f2e1;
 		margin-bottom: 25px;
+		margin-left: 30px;
 	}
 
 	.promo__form-btn {
-		position: absolute;
 		background-color: #021a23;
 		color: #e9edee;
-		width: 100%;
+		width: 264px;
 		height: 70px;
 		border: none;
-		bottom: 0;
-		left: 0;
 		text-align: center;
+		margin-top: 5px;
 	}
 
 	/*DIRECTION*/
@@ -430,7 +435,7 @@
 		display: block;
 		position: absolute;
 		background: #eec643;
-		width: 570px;
+		width: 100%;
 		height: 2px;
 	}
 
@@ -439,7 +444,7 @@
 		display: block;
 		position: absolute;
 		background: #eec643;
-		width: 570px;
+		width: 100%;
 		height: 2px;
 		bottom: 0;
 	}
@@ -591,7 +596,7 @@
 		display: block;
 		position: absolute;
 		background: #eec643;
-		width: 530px;
+		width: 100%;
 		height: 2px;	
 	}
 
@@ -600,7 +605,7 @@
 		display: block;
 		position: absolute;
 		background: #eec643;
-		width: 530px;
+		width: 100%;
 		height: 2px;
 	}
 
@@ -657,7 +662,7 @@
 	}
 
 	.about__form-item {
-		width: 210px;
+		width: 100%;
 		border: none;
 		border-bottom: 2px solid #eec643;
 		margin-bottom: 25px;
@@ -717,22 +722,35 @@
 
 	/*CONTACTS*/
 
+	.contacts__form-mobile {
+		display: none;
+	}
+
 	.contacts__row {
 		display: flex;
 	}
 
 	.col-9 {
-		width: 75%;
+		width: 72.7%;
 		display: flex;
 		flex-direction: column;
+		margin-right: 30px;
 	}
 
 	.row-frst {
 		display: flex;
 	}
 
+	.row-frst__col-8 {
+		width: 66.67%;
+	}
+
 	.contacts__title {
 		color: #021a23;
+	}
+
+	.row-frst__col-4 {
+		width: 33.33%;
 	}
 
 	.contacts__text {
@@ -740,10 +758,57 @@
 	}
 
 	.col-3 {
-		width: 25%;
+		width: 27.3%;
 	}
 
+	.contacts__form {
+		position: relative;
+		border: 2px solid #eec643;
+		min-height: 570px;
+	  padding-left: 30px;
+	  padding-right: 30px;
+		color: #021a23;
+	}
 
+	.contacts__form--header {
+		color: #eec643;
+	}
+
+	.contacts__form--text {
+		margin-bottom: 175px;
+	}
+
+	.contacts__form--item {
+		width: 100%;
+		border: none;
+		border-bottom: 2px solid #eec643;
+		margin-bottom: 25px;
+	}
+
+	.contacts__form--btn {
+		position: absolute;
+		width: 100%;
+		height: 70px;
+		border: none;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		background-color: #eec643;
+		color: #f7f1d7;
+	}
+
+/*	
+		.about__form-btn {
+		position: absolute;
+		width: 100%;
+		height: 70px;
+		border: none;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		background-color: #eec643;
+		color: #f7f1d7;
+	}*/
 
 
 
