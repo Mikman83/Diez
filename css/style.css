@@ -20,7 +20,8 @@
 	}
 
 	.header__logo,
-	.footer__logo {
+	.footer__logo,
+	.video__play {
 		background-image: url('../img/css_sprites.png'); 
 		background-repeat: no-repeat;
 	}
@@ -380,12 +381,19 @@
 	  width: 70%;		
 	}
 
+	.about__col-7 {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.about__studio {
 		background-image: url(../img/advantages_card_img_3.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 	  min-height: 145px;
 		padding-left: 10px;
+		width: 80%;
+		margin-right: 15px;
 	}
 
 	.about__studio--header {
@@ -402,9 +410,9 @@
 
 	.about__item--form-mobile {
 		transform: rotate(-90deg);
-		width: 100%;
-		background-color: #eec643;
+		width: 20%;
 		text-align: center;
+		background-color: #eec643;
 	}
 
 	.about__item--form-link {
@@ -421,10 +429,86 @@
 
 	/*VIDEO*/
 
+	.video__header {
+		position: relative;
+		font-size: 30px;
+  	font-family: "Prata";
+		transform: none;
+		color: #021a23;
+		font-weight: normal;
+	}
+
+	.video__header:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background: #eec643;
+		width: 100%;
+		height: 2px;
+		top: -5px;		
+	}
+
+	.video__header::after {
+		content: '';
+		display: block;
+		position: absolute;
+		background: #eec643;
+		width: 100%;
+		height: 2px;
+		bottom: -5px;
+	}
+
 	.video__chery {
 		background-image: url(../img/video_card_img_1.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+		width: 80%;
+		min-height: 185px;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-top: 110px;
+	}
+
+	.video__chery--link {
+		text-decoration: none;
+		position: relative;
+	}
+
+	.video__play {
+		position: absolute;
+		content: '';
+		display: block;
+		width: 28px;
+		height: 35px;
+    background-position: -10px -211px;
+    z-index: 2;
+    top: -35px;
+    left: 90px;
+	}
+
+	.video__chery--title {
+	  font-size: 18px;
+	  font-family: "PTSans", sans-serif;
+	  color: #f9fcfc;
+	  font-weight: bold;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	}
+
+	.video__chery--text-desc {
+		display: none;
+	}
+
+	.video__chery--text-mobile {
+		display: block;
+  	font-size: 16px;
+	  font-family: "PTSans", sans-serif;
+	  color: #f9fcfc;
+ 	 	margin-top: 10px;
+	}
+
+	.col-3 {
+		display: none;
 	}
 
 	.video__jo {
@@ -896,6 +980,10 @@
 		text-decoration: none;
 	}
 
+	.video__play {
+		display: none;
+	}
+
 	.video__chery--title {
 		color: #f9fcfc;
 	}
@@ -934,7 +1022,12 @@
 		margin-top: 0;
 	}
 
-	.video__chery--text {
+	.video__chery--text-mobile {
+		display: none;
+	}
+
+	.video__chery--text-desc {
+		display: block;
 		color: #f9fcfc;
 		line-height: 24px;
 	}
