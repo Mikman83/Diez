@@ -286,10 +286,11 @@
 	}
 
 	.direction__item {
-		transform: rotate(-90deg);
+		transform: rotate(180deg);
 		width: 100%;
 		background-color: #eec643;
 		text-align: center;
+		writing-mode: vertical-lr;
 	}
 
 	.direction__link {
@@ -301,6 +302,8 @@
 		color: #021a23;
 	  font-size: 16px;
 	  font-family: "PTSans", sans-serif;
+	  font-weight: 400;
+	  text-transform: uppercase;
 	}
 
 
@@ -410,10 +413,11 @@
 	}
 
 	.about__item--form-mobile {
-		transform: rotate(-90deg);
+		transform: rotate(180deg);
 		width: 20%;
 		text-align: center;
 		background-color: #eec643;
+		writing-mode: vertical-lr;
 	}
 
 	.about__item--form-link {
@@ -425,6 +429,8 @@
 		color: #f9fcfc;
 	  font-size: 16px;
 	  font-family: "PTSans", sans-serif;
+	  text-transform: uppercase;
+	  font-weight: 400;
 	}
 
 
