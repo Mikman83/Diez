@@ -595,6 +595,27 @@
 		height: 210px;
 	}
 
+	.contacts__form {
+		display: none;
+	}
+
+	.contacts__form-mobile {
+		margin-top: 15px;
+	}
+
+	.about__item--form-link {
+		width: 100%;
+		height: 60px;
+		border: none;
+		background-color: #eec643;
+	}
+
+	/*FOOTER*/
+
+	.footer {
+		display: none;
+	}
+
 
 @media (min-width: 1024px) {
 	
@@ -1168,11 +1189,16 @@
 		line-height: 30px;
 	}
 
+	.row-scd {
+		height: 435px;
+	}
+
 	.contacts__col-3 {
 		width: 27.3%;
 	}
 
 	.contacts__form {
+		display: block;
 		position: relative;
 		border: 2px solid #eec643;
 		min-height: 570px;
@@ -1211,6 +1237,7 @@
 	/*FOOTER*/
 
 	.footer {
+		display: block;
 		margin-top: 90px;
 		padding-bottom: 60px;
 	}
