@@ -265,6 +265,7 @@
 	  min-height: 145px;
 	  width: 80%;
 	  margin-right: 15px;
+	  padding-left: 10px;
 	}
 
 	.direction__piano--header {
@@ -341,18 +342,80 @@
 		background-image: url(../img/advantages_card_img_1.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+	  min-height: 145px;
+		padding-left: 10px;
+		margin-bottom: 15px;
 	}
+
+	.about__composition--header {
+		font-family: "PTSans", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.about__composition--text-mobile {
+	  font-size: 16px;
+	  font-family: "PTSans", sans-serif;
+	  width: 70%;
+	}  		
 
 	.about__result {
 		background-image: url(../img/advantages_card_img_2.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+	  min-height: 145px;
+		padding-left: 10px;
+		margin-bottom: 15px;
+	}
+
+	.about__result--header {
+		font-family: "PTSans", sans-serif;
+		font-size: 18px;
+		font-weight: bold;		
+	}
+
+	.about__result--text-mobile {
+	  font-size: 16px;
+	  font-family: "PTSans", sans-serif;
+	  width: 70%;		
 	}
 
 	.about__studio {
 		background-image: url(../img/advantages_card_img_3.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+	  min-height: 145px;
+		padding-left: 10px;
+	}
+
+	.about__studio--header {
+		font-family: "PTSans", sans-serif;
+		font-size: 18px;
+		font-weight: bold;			
+	}
+
+	.about__studio--text-mobile {
+	  font-size: 16px;
+	  font-family: "PTSans", sans-serif;
+	  width: 70%;		
+	}
+
+	.about__item--form-mobile {
+		transform: rotate(-90deg);
+		width: 100%;
+		background-color: #eec643;
+		text-align: center;
+	}
+
+	.about__item--form-link {
+		text-decoration: none;
+	}
+
+	.about__item-title {
+		white-space: nowrap;
+		color: #f9fcfc;
+	  font-size: 16px;
+	  font-family: "PTSans", sans-serif;
 	}
 
 
@@ -728,6 +791,7 @@
 		min-height: 470px;
 		width: 50%;
 		margin-right: 30px;
+		margin-bottom: 0;
 	}
 
 	.about__result {
@@ -736,6 +800,7 @@
 		background-size: cover;
 		min-height: 470px;
 		width: 50%;
+		margin-bottom: 0;
 	}
 
 	.about__studio {
