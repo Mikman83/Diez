@@ -278,8 +278,8 @@
 	}
 
 	.direction__piano--text-desc {
-  font-size: 16px;
-  font-family: "PTSans", sans-serif;		
+	  font-size: 16px;
+	  font-family: "PTSans", sans-serif;		
 	}
 
 	.direction__cols-inner {
@@ -299,7 +299,6 @@
 	}
 
 	.direction__item-title {
-		white-space: nowrap;
 		color: #021a23;
 	  font-size: 16px;
 	  font-family: "PTSans", sans-serif;
@@ -886,6 +885,7 @@
 		min-height: 269px;
 		padding-left: 15px;
 		transform: 	none;
+		writing-mode: lr-tb;
 		order: 2;
 	}
 	
