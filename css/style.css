@@ -269,6 +269,7 @@
 	  width: 80%;
 	  margin-right: 15px;
 	  padding-left: 10px;
+	  padding-right: 10px;
 	}
 
 	.direction__piano--header {
@@ -292,6 +293,8 @@
 		background-color: #eec643;
 		text-align: center;
 		writing-mode: vertical-lr;
+		padding-bottom: 10px;
+		padding-top: 10px;
 	}
 
 	.direction__link {
@@ -304,6 +307,7 @@
 	  font-family: "PTSans", sans-serif;
 	  font-weight: 400;
 	  text-transform: uppercase;
+	  margin-left: 22px;
 	}
 
 
