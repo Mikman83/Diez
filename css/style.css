@@ -729,6 +729,7 @@
 	}
 
 	.promo__form {
+		position: relative;
 		border: 2px solid #021a23;
 		background-color: #f7f2e1;
 		color: #021a23;
@@ -758,6 +759,7 @@
 	}
 
 	.promo__form-btn {
+		position: absolute;
 		background-color: #021a23;
 		color: #e9edee;
 		width: 264px;
@@ -765,6 +767,8 @@
 		border: none;
 		text-align: center;
 		margin-top: 5px;
+		left: 0;
+		bottom: 0;
 	}
 
 	/*DIRECTION*/
